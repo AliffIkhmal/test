@@ -1,2 +1,45 @@
-CTRL + K +  C for multiple comments
-CTRL + K +  U for multiple uncomment
+VS CODE SHORTCUTS - MAINLY USED
+================================
+
+EDITING
+-------
+Ctrl + /                    # Toggle line comment
+Ctrl + K + C                # Add multiple comments
+Ctrl + K + U                # Uncomment multiple lines
+Ctrl + X                    # Cut line
+Ctrl + C                    # Copy line
+Ctrl + V                    # Paste
+Ctrl + Z                    # Undo
+Ctrl + Y                    # Redo
+Ctrl + A                    # Select all
+Alt + Up/Down               # Move line up/down
+Shift + Alt + Down/Up       # Duplicate line up/down
+Ctrl + D                    # Select word (multiple selections)
+Ctrl + H                    # Find and replace
+
+NAVIGATION
+----------
+Ctrl + F                    # Find
+Ctrl + G                    # Go to line
+Ctrl + Home                 # Go to beginning of file
+Ctrl + End                  # Go to end of file
+Ctrl + Shift + P            # Command palette
+
+FILE OPERATIONS
+---------------
+Ctrl + N                    # New file
+Ctrl + O                    # Open file
+Ctrl + S                    # Save file
+Ctrl + Shift + S            # Save as
+Ctrl + W                    # Close file
+Ctrl + Tab                  # Switch between open files
+
+FORMATTING
+----------
+Shift + Alt + F             # Format document
+Tab                         # Indent
+Shift + Tab                 # Outdent
+
+TERMINAL
+--------
+Ctrl + `                    # Open/close terminal

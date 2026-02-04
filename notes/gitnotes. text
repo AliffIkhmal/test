@@ -1,0 +1,99 @@
+GIT - VERSION CONTROL SYSTEM
+============================
+
+WHAT IS GIT?
+- Distributed version control system
+- Tracks changes in code over time
+- Allows collaboration between developers
+- Maintains history of all modifications
+
+BASIC SETUP
+-----------
+git config --global user.name "Your Name"
+git config --global user.email "your.email@gmail.com"
+
+INITIALIZING A REPOSITORY
+--------------------------
+git init                          # Initialize a new repository locally
+git clone <url>                   # Clone an existing repository
+
+CHECKING STATUS
+---------------
+git status                        # Check current status of files
+git log                          # View commit history
+git diff                         # Show changes not staged
+
+STAGING & COMMITTING
+--------------------
+git add <file>                   # Stage specific file
+git add .                        # Stage all changes
+git commit -m "message"          # Commit staged changes with message
+git commit -am "message"         # Stage and commit tracked files at once
+
+BRANCHING
+---------
+git branch                       # List all branches
+git branch <branch-name>         # Create new branch
+git checkout <branch-name>       # Switch to branch
+git checkout -b <branch-name>    # Create and switch to new branch
+git merge <branch-name>          # Merge branch into current branch
+git branch -d <branch-name>      # Delete branch
+
+REMOTE REPOSITORIES
+-------------------
+git remote add origin <url>      # Add remote repository
+git push origin <branch>         # Push commits to remote
+git pull                         # Fetch and merge remote changes
+git fetch                        # Fetch remote changes without merging
+
+UNDOING CHANGES
+---------------
+git restore <file>              # Undo changes in working directory
+git reset HEAD <file>           # Unstage file
+git revert <commit>             # Create new commit that undoes changes
+git checkout -- <file>          # Discard changes in file
+
+RESOLVING CONFLICTS
+-------------------
+git pull                        # Update before pushing
+git add <resolved-file>         # Mark as resolved
+git commit -m "Resolve conflict"
+git push                        # Push changes
+
+USEFUL COMMANDS
+---------------
+git log --oneline               # View concise commit history
+git show <commit-id>            # Show details of specific commit
+git stash                       # Temporarily save changes
+git stash pop                   # Restore stashed changes
+
+PUSHING YOUR PROJECT TO GITHUB
+-------------------------------
+1. CREATE REPOSITORY ON GITHUB
+   - Go to https://github.com/new
+   - Enter repository name
+   - Choose public or private
+   - Click "Create repository"
+
+2. INITIALIZE LOCAL REPOSITORY (if not already done)
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+
+3. ADD REMOTE AND PUSH
+   git remote add origin https://github.com/<username>/<repo-name>.git
+   git push -u origin main
+
+4. SUBSEQUENT PUSHES
+   git add <file>
+   git commit -m "Your message"
+   git push
+
+COMMON ISSUES & SOLUTIONS
+-------------------------
+- Fetch first error: git pull before git push
+- Merge conflict: Resolve conflicts, git add, git commit, git push
+- Wrong branch: git checkout <correct-branch> before pushing
+- Execution policy error (PowerShell): 
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
