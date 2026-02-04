@@ -10,16 +10,16 @@ print(type(weight))
 print(type(is_female))  
 
 # Math operations
-# a = 10
-# b = 3
+a = 10
+b = 3
 
-# print(a + b)    # Addition
-# print(a - b)    # Subtraction
-# print(a * b)    # Multiplication
-# print(a / b)    # Division
-# print(a // b)   # Floor Division
-# print(a % b)    # Modulus
-# print(a ** b)   # Exponentiation
+print(a + b)    # Addition
+print(a - b)    # Subtraction
+print(a * b)    # Multiplication
+print(a / b)    # Division
+print(a // b)   # Floor Division
+print(a % b)    # Modulus
+print(a ** b)   # Exponentiation
 
 celsius = 25
 fahrenheit = (celsius * 9/5) + 32
